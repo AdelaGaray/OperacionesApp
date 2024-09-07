@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OperacionesApp.MainPage"
+             Title="Operaciones">
+
+    <ScrollView>
+        <StackLayout Padding="10" Spacing="20">
+
+            <!-- Sección: Área del cuadrado -->
+            <Label Text="Área del cuadrado" FontSize="24" />
+            <StackLayout Padding="10" BackgroundColor="LightGray" Margin="0,10,0,0">
+                <Label Text="Lado del cuadrado:" />
+                <Entry x:Name="sideEntry" Keyboard="Numeric" Placeholder="Ingrese el lado" />
+                <Button Text="Calcular Área" Clicked="OnCalculateSquareArea" />
+                <Label x:Name="squareResultLabel" Text="Resultado:" />
+                <Button Text="Limpiar" Clicked="OnClearSquareFields" />
+            </StackLayout>
+
+            <!-- Sección: Área del círculo -->
+            <Label Text="Área del círculo" FontSize="24" />
+            <StackLayout Padding="10" BackgroundColor="LightGray" Margin="0,10,0,0">
+                <Label Text="Radio del círculo:" />
+                <Entry x:Name="radiusEntry" Keyboard="Numeric" Placeholder="Ingrese el radio" />
+                <Button Text="Calcular Área" Clicked="OnCalculateCircleArea" />
+                <Label x:Name="circleResultLabel" Text="Resultado:" />
+                <Button Text="Limpiar" Clicked="OnClearCircleFields" />
+            </StackLayout>
+
+            <!-- Sección: Área del rectángulo -->
+            <Label Text="Área del rectángulo" FontSize="24" />
+            <StackLayout Padding="10" BackgroundColor="LightGray" Margin="0,10,0,0">
+                <Label Text="Base del rectángulo:" />
+                <Entry x:Name="baseEntry" Keyboard="Numeric" Placeholder="Ingrese la base" />
+                <Label Text="Altura del rectángulo:" />
+                <Entry x:Name="heightEntry" Keyboard="Numeric" Placeholder="Ingrese la altura" />
+                <Button Text="Calcular Área" Clicked="OnCalculateRectangleArea" />
+                <Label x:Name="rectangleResultLabel" Text="Resultado:" />
+                <Button Text="Limpiar" Clicked="OnClearRectangleFields" />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
